@@ -4,7 +4,6 @@ const config = require('./config')
 
 const fields = ['id', 'createdBy.name', 'createdAt', 'allowedKnowledgeMode', 'displayName', 'description', 'chatMessages_2m', 'chatMessages_c', 'totalUsers_2m', 'totalUsers_c']
 const rows = []
-rows.push(fields.map(field => `"${field}"`).join(','))
 
 async function start() {
     console.log('Fetching AI Apps')
